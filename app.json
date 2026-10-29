@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Casinhas",
+    "slug": "CasinhasApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "casinhas",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mueltec.casinhas"
+    },
+    "android": {
+      "package": "com.mueltec.casinhas",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "static",
+      "name": "Casinhas",
+      "shortName": "Casinhas",
+      "description": "Controle de aluguéis, pagamentos e contratos das suas casas.",
+      "lang": "pt-BR",
+      "themeColor": "#2563EB",
+      "backgroundColor": "#F1F5F9",
+      "display": "standalone",
+      "orientation": "portrait"
+    },
+    "plugins": [
+      "expo-sharing",
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "baseUrl": "/Casinhas"
+    }
+  }
+}
