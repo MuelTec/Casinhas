@@ -4,6 +4,22 @@ Aplicativo para **iOS e Android** (um único código, React Native + Expo) para 
 financeiramente as casas de aluguel: quem é o responsável, quanto é o aluguel, quando o
 contrato termina e o que já foi recebido mês a mês.
 
+## ▶️ Usar agora (sem instalar nada)
+
+O app está publicado como site. Abra no navegador (no iPhone, use o **Safari**):
+
+**👉 <https://mueltec.github.io/Casinhas/>**
+
+- **iPhone**: abra o link no Safari → toque em **Compartilhar** → **Adicionar à Tela de
+  Início**. Vira um app com ícone próprio, em tela cheia.
+- **Android/desktop**: abra o link normalmente. No Chrome, menu ⋮ → *Instalar app* /
+  *Adicionar à tela inicial*.
+
+> ⚠️ **iPhone (iOS)**: o Safari pode **apagar os dados** de sites na tela de início se você
+> não abrir o app por uns **7 dias**. Use sempre **Ajustes → Criar backup** e guarde o
+> arquivo `.json` — assim nunca perde nada. Para voltar, é só importar em
+> **Ajustes → Restaurar backup**.
+
 ## Funcionalidades
 
 - **Casas ilimitadas**: adicionar e remover casas, cada uma com
@@ -62,6 +78,19 @@ eas submit                    # envia direto para as lojas
 ```
 
 Guarde o arquivo `.apk` gerado para instalar direto no celular (fora das lojas) também.
+
+## Como atualizar o site publicado
+
+Sempre que você mudar o código e quiser atualizar o endereço
+<https://mueltec.github.io/Casinhas/>, rode na pasta do projeto:
+
+```bash
+npm run deploy
+```
+
+Isso gera a versão web (`expo export`) e envia para o GitHub automaticamente. Em cerca de
+1 minuto o site atualizado já está no ar. (Só funciona depois que o `git push` da branch
+`main` também foi feito, para o código ficar sincronizado.)
 
 ## Estrutura do projeto
 
