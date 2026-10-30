@@ -37,7 +37,7 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "predeploy": "expo export --platform web",
-    "deploy": "gh-pages --nojekyll -d dist"
+    "deploy": "node scripts/deploy-web.js"
   },
   "private": true
 }
